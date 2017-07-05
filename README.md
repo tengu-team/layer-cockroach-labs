@@ -22,13 +22,9 @@ in the Juju GUI.
 
 Step by step instructions on using the charm:
 
-juju deploy servicename
+juju deploy cockroach-labs
 
-and so on. If you're providing a web service or something that the end user
-needs to go to, tell them here, especially if you're deploying a service that
-might listen to a non-default port.
-
-You can then browse to http://ip-address to configure the service.
+You can then connect to http://ip-address:26257 to access the Database.
 
 ## Scale out Usage
 
@@ -59,7 +55,3 @@ know that, so include that information here:
   - Upstream bug tracker
   - Upstream mailing list or contact information
   - Feel free to add things if it's useful for users
-
-
-[service]: http://example.com
-[icon guidelines]: https://jujucharms.com/docs/stable/authors-charm-icon

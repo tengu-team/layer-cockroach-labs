@@ -1,19 +1,17 @@
-name: layer-cockroach-labs
-summary: <Fill in summary here>
-maintainer: Sebastien <Sebastien@sebastien-PC>
+name: cockroachdb
+summary: This charms the cockroach-labs DB
+maintainer: Sebastien <sebastien.pattyn@tengu.io>
 description: |
-  <Multi-line description here>
+  CockroachDB is a distributed relational database that is scalable, survivable,
+  and strongly consistent - hence the name. It combines the rich functionality
+  of SQL with the horizontal scalability common to NoSQL offerings, and provides
+  enterprise-grade disaster recovery
 tags:
   # Replace "misc" with one or more whitelisted tags from this list:
   # https://jujucharms.com/docs/stable/authors-charm-metadata
   - misc
 subordinate: false
 provides:
-  provides-relation:
-    interface: interface-name
-requires:
-  requires-relation:
-    interface: interface-name
-peers:
-  peer-relation:
-    interface: interface-name
+  db:
+    interface: http
+series: ['xenial']

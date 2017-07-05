@@ -1,0 +1,9 @@
+[Unit]
+Description= Cockroach-labs will be launched as a service
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/cockroach start --insecure
+
+[Install]
+WantedBy=multi-user.target
